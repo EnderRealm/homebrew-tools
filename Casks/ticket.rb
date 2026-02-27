@@ -14,22 +14,22 @@ cask "ticket" do
   on_macos do
     on_intel do
       url "https://github.com/EnderRealm/ticket/releases/download/v#{version}/ticket_#{version}_darwin_amd64.tar.gz"
-      sha256 "1271b87d4792625db593e45065db569c1e2b2dd7326dbd08e4e22bba65759552"
+      sha256 "263871d1224bf102cb7f5d5e47fce41c7c0124996257b1d2fede08124150f8d7"
     end
     on_arm do
       url "https://github.com/EnderRealm/ticket/releases/download/v#{version}/ticket_#{version}_darwin_arm64.tar.gz"
-      sha256 "a3fc257de3d34b015496532cd75a5ecb28f3d6db3f562015e0368e877bcbcb2c"
+      sha256 "a485bc1866d33fcc35a223795aeca31a921244b8afc56bc49faff78db07a6586"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/EnderRealm/ticket/releases/download/v#{version}/ticket_#{version}_linux_amd64.tar.gz"
-      sha256 "e813cf5ec06a900f9f598fd920f756d3ffb544fdaf5ad426d9e1c9a26f50b227"
+      sha256 "32d05811e075db72b0cba8b3665ada980340bbebcb6d02daa396ff6de6412a96"
     end
     on_arm do
       url "https://github.com/EnderRealm/ticket/releases/download/v#{version}/ticket_#{version}_linux_arm64.tar.gz"
-      sha256 "c1d13ae058ca8a09ad793493ffb899479e70198b501e765044e3f7f6c0a0530b"
+      sha256 "a3cf011aa9779223035b3e9bddfe3ea9efffb66bf3dced795d1dd91ef9d0d8ca"
     end
   end
 
