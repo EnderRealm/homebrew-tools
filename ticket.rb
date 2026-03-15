@@ -5,20 +5,20 @@
 class Ticket < Formula
   desc "Markdown-based ticket management CLI"
   homepage "https://github.com/EnderRealm/ticket"
-  version "4.2.0"
+  version "4.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/EnderRealm/ticket/releases/download/v4.2.0/ticket_4.2.0_darwin_amd64.tar.gz"
-      sha256 "bf6a1350c2a6561729c1682cd786829405326df31f056292001e242f0aeb7700"
+      url "https://github.com/EnderRealm/ticket/releases/download/v4.3.0/ticket_4.3.0_darwin_amd64.tar.gz"
+      sha256 "c8284d6ff81cf658fab69213c121a412b34f4629ca1292da3f8094083768548c"
 
       define_method(:install) do
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/EnderRealm/ticket/releases/download/v4.2.0/ticket_4.2.0_darwin_arm64.tar.gz"
-      sha256 "f88a7cd9b9277c59be99cc91d9eb539f27dd7830b18b16989f9ed20faaec42eb"
+      url "https://github.com/EnderRealm/ticket/releases/download/v4.3.0/ticket_4.3.0_darwin_arm64.tar.gz"
+      sha256 "afc858df33168c29b2b5e55008b46e2a35bacc19d46e92cabc0505e01221118c"
 
       define_method(:install) do
         bin.install "tk"
@@ -28,15 +28,15 @@ class Ticket < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EnderRealm/ticket/releases/download/v4.2.0/ticket_4.2.0_linux_amd64.tar.gz"
-      sha256 "52ddcd2fff08d05a5c209122605cc4d422f1881a10651ac6358c09a9729f0e5a"
+      url "https://github.com/EnderRealm/ticket/releases/download/v4.3.0/ticket_4.3.0_linux_amd64.tar.gz"
+      sha256 "6e1090bf5af9412e1783e9c348d18c77f11061f25074f92883ace5b75a9a41a7"
       define_method(:install) do
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EnderRealm/ticket/releases/download/v4.2.0/ticket_4.2.0_linux_arm64.tar.gz"
-      sha256 "8a4ad4773833c34c4c2e37f8ba2578f5221637e82720e0b691ce6d2c69272571"
+      url "https://github.com/EnderRealm/ticket/releases/download/v4.3.0/ticket_4.3.0_linux_arm64.tar.gz"
+      sha256 "066bc69d4db34f801153e3cb0560d7bee5f1530cccdc064bf887df282e3e4147"
       define_method(:install) do
         bin.install "tk"
       end
