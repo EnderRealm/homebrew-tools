@@ -5,20 +5,20 @@
 class Ticket < Formula
   desc "Markdown-based ticket management CLI"
   homepage "https://github.com/EnderRealm/ticket"
-  version "8.12.0"
+  version "8.13.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/EnderRealm/ticket/releases/download/v8.12.0/ticket_8.12.0_darwin_amd64.tar.gz"
-      sha256 "7165341573f10ed5e48ab4a33680f4305f6e5ec55ef557a20a24710dc9db27e5"
+      url "https://github.com/EnderRealm/ticket/releases/download/v8.13.0/ticket_8.13.0_darwin_amd64.tar.gz"
+      sha256 "95be38fbaa49207456e53a79e5a83b3348d4ee78b8d3622f0b492a70262d8eb7"
 
       define_method(:install) do
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/EnderRealm/ticket/releases/download/v8.12.0/ticket_8.12.0_darwin_arm64.tar.gz"
-      sha256 "520c71d4499a6e15740a3ca5244bda96c170c674860ecb21b8891d1f896505ce"
+      url "https://github.com/EnderRealm/ticket/releases/download/v8.13.0/ticket_8.13.0_darwin_arm64.tar.gz"
+      sha256 "762cd13ef60f5d3670ba24d757ccd8f236f805d06b465c100104a61c16c69998"
 
       define_method(:install) do
         bin.install "tk"
@@ -28,15 +28,15 @@ class Ticket < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EnderRealm/ticket/releases/download/v8.12.0/ticket_8.12.0_linux_amd64.tar.gz"
-      sha256 "82d1fd4e724e273e237633802167f6346743a90106c90e9eecf1793c8f9de6e4"
+      url "https://github.com/EnderRealm/ticket/releases/download/v8.13.0/ticket_8.13.0_linux_amd64.tar.gz"
+      sha256 "5b8e83efdb8598735d01a09cdf005e0a1c4c47d866b3eb26ef6f3872c0b3e0a3"
       define_method(:install) do
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EnderRealm/ticket/releases/download/v8.12.0/ticket_8.12.0_linux_arm64.tar.gz"
-      sha256 "31ae39726b026376c00558f688c381857d5667b45bb624d783093efcd5cc39ac"
+      url "https://github.com/EnderRealm/ticket/releases/download/v8.13.0/ticket_8.13.0_linux_arm64.tar.gz"
+      sha256 "c971b1092f2fd07c465ed8497f599bb80990282e0cd52b16d7f7dc84ae7b8c17"
       define_method(:install) do
         bin.install "tk"
       end
